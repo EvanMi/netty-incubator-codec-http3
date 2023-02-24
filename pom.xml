@@ -68,7 +68,7 @@
   <properties>
     <javaModuleName>io.netty.incubator.codec.http3</javaModuleName>
     <skipTests>false</skipTests>
-    <netty.version>4.1.85.Final</netty.version>
+    <netty.version>4.1.88.Final</netty.version>
     <netty.build.version>30</netty.build.version>
     <netty.quic.version>0.0.34.Final</netty.quic.version>
     <netty.quic.classifier>${os.detected.name}-${os.detected.arch}</netty.quic.classifier>
@@ -449,5 +449,17 @@
       <artifactId>surefire-junit4</artifactId>
       <version>2.22.1</version>
     </dependency>
+
+    <dependency>
+      <groupId>org.bouncycastle</groupId>
+      <artifactId>bcpkix-jdk15on</artifactId>
+      <version>1.65</version>
+    </dependency>
+    <dependency>
+      <groupId>org.bouncycastle</groupId>
+      <artifactId>bcprov-jdk15on</artifactId>
+      <version>1.65</version>
+    </dependency>
+
   </dependencies>
 </project>
